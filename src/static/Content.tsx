@@ -11,6 +11,7 @@ import EditToken from "../component/EditToken";
 import UpdatedBal from "../component/UpdatedBal";
 import UserManagement from "../component/UserMangement";
 import UserManagementForm from "../component/UserManagementForm";
+import KycHistory from "../component/Kyc/KycHistory";
 
 const ContentPage: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const ContentPage: React.FC = () => {
         <Route path="/order" element={<Order />} />
         <Route path="/" element={<Dashboard />} />
         <Route path="/coins" element={<Coin />} />
+        <Route path="/kychistory" element={<KycHistory />} />
         <Route path="/edittoken" element={<EditToken />} />
         <Route path="/updatedBal" element={<UpdatedBal />} />
         <Route path="/usermanagement" element={<UserManagement />} />
