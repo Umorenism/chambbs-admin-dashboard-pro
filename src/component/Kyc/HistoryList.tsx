@@ -41,12 +41,10 @@ const HistoryList = () => {
             {item.date}
           </h1>
           <div className="flex items-center gap-3 ml-5">
-            {/* <button className="bg-slate-800 px-3 py-1 text-sm text-white rounded-md">
+            <button className="bg-slate-800 px-3 py-1 text-sm text-white rounded-md">
               View
             </button>
-            <button className="bg-green-800 px-3 py-1 text-sm text-white rounded-md">
-              Approve
-            </button> */}
+
             <button className="bg-red-800 px-3 py-1 text-sm text-white rounded-md">
               Delete
             </button>
