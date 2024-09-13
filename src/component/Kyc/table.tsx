@@ -12,6 +12,9 @@ const tableData: TableRow[] = [
   { id: 2, name: "Jane Smith", status: "Inactive", amount: 1500 },
   { id: 3, name: "Samuel Green", status: "Pending", amount: 1200 },
   { id: 4, name: "Emily Brown", status: "Active", amount: 2000 },
+  { id: 5, name: "pop Brown", status: "Active", amount: 2000 },
+  { id: 6, name: "James Scot", status: "Active", amount: 2000 },
+  { id: 7, name: "Mike Brown", status: "Active", amount: 2000 },
 ];
 
 const TableList: React.FC = () => {

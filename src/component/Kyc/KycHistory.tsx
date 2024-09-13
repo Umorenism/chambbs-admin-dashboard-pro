@@ -80,16 +80,16 @@ const kycHistory = () => {
         </div>
 
         <div className="gap-10 py-4 px-6 flex justify-center items-center">
-          <button className="bg-slate-900 border py-3 px-10 rounded-md text-white p-2">
+          <button className="bg-slate-700 border py-3 px-10 rounded-md text-white p-2">
             Withdraw
           </button>
           <button
-            className="bg-slate-900 py-3 px-10 rounded-md text-white p-2"
+            className="bg-slate-700 py-3 px-10 rounded-md text-white p-2"
             onClick={handleApproveClick}
           >
             Approve
           </button>
-          <button className="bg-slate-900 py-3 px-10 rounded-md text-white p-2">
+          <button className="bg-slate-700 py-3 px-10 rounded-md text-white p-2">
             Spot
           </button>
         </div>
