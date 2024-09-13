@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HistoryList = () => {
   const historyData = [
     {
@@ -41,9 +43,11 @@ const HistoryList = () => {
             {item.date}
           </h1>
           <div className="flex items-center gap-3 ml-5">
-            <button className="bg-slate-800 px-3 py-1 text-sm text-white rounded-md">
-              View
-            </button>
+            <Link to="/kycdetail">
+              <button className="bg-slate-800 px-3 py-1 text-sm text-white rounded-md">
+                View
+              </button>
+            </Link>
 
             <button className="bg-red-800 px-3 py-1 text-sm text-white rounded-md">
               Delete

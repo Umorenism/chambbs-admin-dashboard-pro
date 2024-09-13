@@ -12,6 +12,8 @@ import UpdatedBal from "../component/UpdatedBal";
 import UserManagement from "../component/UserMangement";
 import UserManagementForm from "../component/UserManagementForm";
 import KycHistory from "../component/Kyc/KycHistory";
+import KycDetail from "../component/Kyc/KycDetail";
+import DepositDetailPage from "../component/Kyc/Deposite";
 
 const ContentPage: React.FC = () => {
   return (
@@ -24,6 +26,8 @@ const ContentPage: React.FC = () => {
         <Route path="/" element={<Dashboard />} />
         <Route path="/coins" element={<Coin />} />
         <Route path="/kychistory" element={<KycHistory />} />
+        <Route path="/kycdetail" element={<KycDetail />} />
+        <Route path="/kycdeposite" element={<DepositDetailPage />} />
         <Route path="/edittoken" element={<EditToken />} />
         <Route path="/updatedBal" element={<UpdatedBal />} />
         <Route path="/usermanagement" element={<UserManagement />} />
