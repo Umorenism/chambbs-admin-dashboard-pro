@@ -56,7 +56,7 @@ const KycDetail = () => {
               <TableList />
             </div>
           </div>
-          <div className="bg-pink-300 ">second</div>
+          <div className="bg-pink-300 "></div>
         </div>
       </div>
     </div>

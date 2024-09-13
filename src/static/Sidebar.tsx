@@ -84,6 +84,11 @@ const Sidebar: React.FC = () => {
               <Link to="/kychistory">Kyc</Link>
             </button>
           </li>
+          <li>
+            <button className="block px-4 py-2 hover:bg-slate-200 text-black rounded-md w-full text-left">
+              <Link to="/kycdeposite">Deposite Withdrawal</Link>
+            </button>
+          </li>
 
           <li>
             <Link
