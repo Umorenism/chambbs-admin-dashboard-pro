@@ -27,13 +27,13 @@ const HistoryList = () => {
           <h1 className="text-center bg-slate-200 flex-grow flex items-center justify-center">
             {item.receiptAddress}
           </h1>
-          <h1 className="text-center bg-slate-200 flex-grow flex items-center justify-center ">
+          <h1 className="text-center bg-slate-200 flex-grow flex items-center justify-center">
             {item.addressHashed}
           </h1>
           <h1 className="text-center bg-slate-200 flex-grow flex items-center justify-center">
             {item.amount}
           </h1>
-          <h1 className="text-center  bg-slate-200 flex-grow flex items-center justify-center">
+          <h1 className="text-center bg-slate-200 flex-grow flex items-center justify-center">
             {item.email}
           </h1>
           <h1 className="text-center bg-slate-200 flex-grow flex items-center justify-center">
@@ -43,6 +43,10 @@ const HistoryList = () => {
             {item.date}
           </h1>
           <div className="flex items-center gap-3 ml-5">
+            <button className="bg-green-600 px-3 py-1 text-sm text-white rounded-md">
+              Approve
+            </button>
+
             <Link to="/kycdetail">
               <button className="bg-slate-800 px-3 py-1 text-sm text-white rounded-md">
                 View
