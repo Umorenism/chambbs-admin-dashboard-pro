@@ -14,13 +14,13 @@ const Sidebar: React.FC = () => {
   };
 
   return (
-    <aside className="fixed top-16 left-0 w-64 h-full bg-white text-black flex flex-col py-4 shadow-md">
+    <aside className="fixed top-16 left-0 w-64 h-full bg-slate-950  flex flex-col py-4 text-white shadow-md">
       <nav className="mt-4 text-xl">
         <ul className="space-y-2 m-2 text-black">
           <li>
             <Link
               to="/"
-              className="flex items-center gap-2 px-4 py-2 hover:bg-slate-200 text-black  rounded-md w-full "
+              className="flex items-center bg-green-500 gap-2 px-4 py-2 hover:bg-green-400  text-white  rounded-md w-full "
             >
               <RxDashboard />
               Dashboard
@@ -29,17 +29,17 @@ const Sidebar: React.FC = () => {
           <li>
             <button
               onClick={handleClick}
-              className="block px-4 py-2 hover:bg-slate-200 text-black rounded-md w-full text-left"
+              className="block px-4 py-2 hover:bg-green-500  text-white rounded-md w-full text-left"
             >
               Trading
             </button>
             {dropdown && (
-              <div className="bg-slate-200 text-black mt-2 py-2 rounded-md shadow-lg">
+              <div className="border text-white mt-2 py-2 rounded-md shadow-lg">
                 <ul>
                   <li>
                     <Link
                       to="/tradingbot"
-                      className="block px-4 py-2 hover:bg-gray-300"
+                      className="block px-4 py-2 hover:bg-green-500 "
                     >
                       Trading Bot
                     </Link>
@@ -48,7 +48,7 @@ const Sidebar: React.FC = () => {
                   <li>
                     <Link
                       to="/tradingbal"
-                      className="block px-4 py-2 hover:bg-gray-300"
+                      className="block px-4 py-2 hover:bg-green-500 "
                     >
                       Trade Balance
                     </Link>
@@ -57,7 +57,7 @@ const Sidebar: React.FC = () => {
                   <li>
                     <Link
                       to="/order"
-                      className="block px-4 py-2 hover:bg-gray-300"
+                      className="block px-4 py-2 hover:bg-green-500 "
                     >
                       Order
                     </Link>
@@ -69,23 +69,23 @@ const Sidebar: React.FC = () => {
           <li>
             <button
               onClick={handleToken}
-              className="block px-4 py-2 hover:bg-slate-200 text-black rounded-md w-full text-left"
+              className="block px-4 py-2 hover:bg-green-500  text-white rounded-md w-full text-left"
             >
               <Link to="/coins">Coins</Link>
             </button>
           </li>
           <li>
-            <button className="block px-4 py-2 hover:bg-slate-200 text-black rounded-md w-full text-left">
+            <button className="block px-4 py-2 hover:bg-green-500  text-white rounded-md w-full text-left">
               <Link to="/usermanagement">User Management</Link>
             </button>
           </li>
           <li>
-            <button className="block px-4 py-2 hover:bg-slate-200 text-black rounded-md w-full text-left">
+            <button className="block px-4 py-2 hover:bg-green-500  text-white rounded-md w-full text-left">
               <Link to="/kychistory">Kyc</Link>
             </button>
           </li>
           <li>
-            <button className="block px-4 py-2 hover:bg-slate-200 text-black rounded-md w-full text-left">
+            <button className="block px-4 py-2 hover:bg-green-500 text-white rounded-md w-full text-left">
               <Link to="/kycdeposite">Deposite Withdrawal</Link>
             </button>
           </li>
@@ -93,7 +93,7 @@ const Sidebar: React.FC = () => {
           <li>
             <Link
               to="/settings"
-              className="block px-4 py-2 hover:bg-slate-200 text-black  rounded-md w-full"
+              className="block px-4 py-2 hover:bg-green-500  text-white rounded-md w-full"
             >
               Settings
             </Link>

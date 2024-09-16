@@ -2,6 +2,27 @@ import React from "react";
 import TableList from "./table";
 import { FaDownload, FaFilter } from "react-icons/fa";
 
+const users = [
+  {
+    img: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: "John Doe",
+    email: "john.doe@example.com",
+    phone: "+1 (555) 123-4567",
+    dob: "1990-04-23",
+    coinsPurchased: 1500,
+    purchaseAmount: "$500",
+  },
+  {
+    img: "https://randomuser.me/api/portraits/women/44.jpg",
+    name: "Jane Smith",
+    email: "jane.smith@example.com",
+    phone: "+1 (555) 987-6543",
+    dob: "1985-08-14",
+    coinsPurchased: 2500,
+    purchaseAmount: "$750",
+  },
+];
+
 const KycDetail = () => {
   return (
     <div className="bg-slate-200 min-h-screen flex flex-col p-4">
@@ -56,7 +77,60 @@ const KycDetail = () => {
               <TableList />
             </div>
           </div>
-          <div className="bg-pink-300 "></div>
+
+          {/* <div className="grid grid-cols-1 gap-4 ">
+            {users.map((user, index) => (
+              <div
+                key={index}
+                className="border p-4 rounded-lg shadow-md bg-white flex gap-4 items-center "
+              >
+                <img
+                  src={user.img}
+                  alt={user.name}
+                  className="w-16 h-16 rounded-full object-cover"
+                />
+                <div>
+                  <h3 className="text-lg font-semibold">{user.name}</h3>
+                  <p>Email: {user.email}</p>
+                  <p>Phone: {user.phone}</p>
+                  <p>Date of Birth: {user.dob}</p>
+                  <p>Coins Purchased: {user.coinsPurchased}</p>
+                  <p>Purchase Amount: {user.purchaseAmount}</p>
+                </div>
+              </div>
+            ))}
+          </div> */}
+
+          <div className="grid grid-cols-1 gap-4">
+            {users.map((user, index) => (
+              <div
+                key={index}
+                className="border p-4 rounded-lg shadow-md bg-white flex gap-4 items-center justify-between"
+              >
+                <img
+                  src={user.img}
+                  alt={user.name}
+                  className="w-16 h-16 rounded-full object-cover"
+                />
+                <div>
+                  <h3 className="text-lg font-semibold">{user.name}</h3>
+                  <p>Email: {user.email}</p>
+                  <p>Phone: {user.phone}</p>
+                  <p>Date of Birth: {user.dob}</p>
+                  <p>Coins Purchased: {user.coinsPurchased}</p>
+                  <p>Purchase Amount: {user.purchaseAmount}</p>
+                </div>
+                <div className="flex gap-2">
+                  <button className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
+                    Approve
+                  </button>
+                  <button className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
